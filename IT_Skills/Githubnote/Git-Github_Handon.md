@@ -55,7 +55,7 @@ ssh -T [git@github.com](mailto:git@github.com)
 
 ## 📊 図解1: Git基本ワークフロー
 
-```
+```mermaid
 flowchart TD
     A[ワーキングディレクトリ<br/>作業中のファイル] --> |git add| B[ステージングエリア<br/>コミット準備エリア]
     B --> |git commit| C[ローカルリポジトリ<br/>履歴保存エリア]
@@ -131,7 +131,7 @@ git branch -d feature/new-feature
 
 ## 📊 図解2: Gitブランチ戦略
 
-```
+```mermaid
 flowchart TD
     A["初期コミット<br/>main"] --> B["ログイン機能追加<br/>feature/login"]
     A --> C["ダッシュボード作成<br/>feature/dashboard"]
@@ -205,7 +205,7 @@ git push origin feature/awesome-feature
 
 ## 📊 図解3: GitHub協働ワークフロー
 
-```
+```mermaid
 sequenceDiagram
     participant Dev1 as 開発者A
     participant GitHub as GitHub
